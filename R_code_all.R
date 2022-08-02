@@ -25,11 +25,14 @@ library(wordcloud2)
 library(devtools)
 library(RColorBrewer)
 
+
 #################--------------------1-1.rearrange categories  ----------------###################### 
 
 #buy_all : 온라인 구매 raw data 
 #sns_all : SNS raw data 
 #food_cat2 : 재정립한 카테고리 
+
+
 
 
 buy_all <- read.csv("buy_all.csv", header=TRUE, sep=',') %>% mutate(sm_cat=str_trim(sm_cat)) 

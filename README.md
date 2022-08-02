@@ -7,6 +7,9 @@
 ---
 
 **공모 배경**
+
+<img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1fa17323-7d9e-4c15-896a-577f3b901255/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220802%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220802T014333Z&X-Amz-Expires=86400&X-Amz-Signature=bd8a0612a51d02d7bfdfb6b8819f655425e0b6ab0c98fd15a3abc1956b7a5494&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject">
+
 * 기상·기후 정보와 SNS 채널을 활용한 소비패턴 파악과 예측의 정확성 제고 및 마케팅 효과의 극대화
 
 ### 주요 분석 과정

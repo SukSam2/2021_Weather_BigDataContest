@@ -2,12 +2,18 @@
 
 ### 기상청 **[<2021 날씨 빅데이터 콘테스트 - 민간협력형>](https://bd.kma.go.kr/contest/info_05.do)**
 ### **장려상 수상작 (Unnormal)**   
-**날씨에 따른 온라인 구매 예측 - VARX 모델에 기반한 분석 모델 제안**
+**날씨에 따른 온라인 구매 예측 - VARX 모델에 기반한 분석 모델 제안**  
 
+
+
+<br>
+
+
+
+
+### **공모 배경**
 
 ---
-
-**공모 배경**
 
 <img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1fa17323-7d9e-4c15-896a-577f3b901255/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220802%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220802T014333Z&X-Amz-Expires=86400&X-Amz-Signature=bd8a0612a51d02d7bfdfb6b8819f655425e0b6ab0c98fd15a3abc1956b7a5494&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject">
 
@@ -16,9 +22,16 @@
 
 
 
----
+<br>
+<br>
 
-### 주요 분석 과정
+### **주요 분석 과정**
+----
+
+<img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0cebc759-ddec-48cb-b85f-abd8324ed7b7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220802%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220802T051743Z&X-Amz-Expires=86400&X-Amz-Signature=7e07bef23134486903db07a3c9eb043a73a64778f9cb7e64706ed61ae987005a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject">
+
+
+<br>
 
 **데이터 정제**
 - 기상 데이터 결측값을 MICE를 이용해 처리하여 MAR로 가정된 결측값 대체
@@ -35,6 +48,9 @@
 
 
 **데이터 전처리**
+
+
+
 
 - 카테고리 재분류
     - 카테고리의 명확한 기준 재설정 & 식품 중분류 추가 (식품 공전, 랄라블라, LG생활전자 분류 기준 참고)
@@ -80,7 +96,15 @@
     - 시계열 모델(VARX, ARIMAX)의 예측 오차가 더 낮음
     - 시계열 모델 중 다변량 상관관계를 고려한 VARX의 예측 오차가 더 낮음
 
-**결과 활용방안 및 제안**
+
+<br><br>
+
+
+### **결과 활용방안 및 제안**
+---
+
+<img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/77d1433b-a61b-4ccf-9a73-0f2475302c69/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220802%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220802T052751Z&X-Amz-Expires=86400&X-Amz-Signature=a2fce0e6ce51297e840b194a27c61e651f57d6410b6462c690aa7e5c7b721755&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject">
+
 
 - 브랜드의 세부 제품의 구매량 한 번에 고려하여 수요 예측 가능
 
@@ -98,9 +122,12 @@
     - 날씨로 인해 구매량이 저조할 것으로 예상되는 상품의 효율적 구매 전환 기대
 
 
+<br>
+<br>
+
+### **활용 데이터 목록**
 ---
 
-### 활용 데이터 목록
 **2018-01-01 \~ 2019-12-31**  
 
 **[기상청 날씨마루]**
@@ -123,13 +150,13 @@
 - 소셜 데이터
     - 날짜, 상품 대분류명, 상품 소분류명, 10만 건 당 문서 건수
 
+
+<br>
+
+### **사용 툴**
 ---
-### 사용 툴
-- R
+- **R**
 
 
-### Q & A
 
-- 다중회귀가 머신러닝 모델보다 예측오차 낮은 이유는 다중공선성이 거의 없고 전처리가 잘 된 데이터 때문일 것으로 추측
-    - 딥러닝 모델 고려하지 않은 이유: 사용가능한 샘플 수가 730(=365 $\times$ 2)개로 적음, 전처리 잘 된 데이터이므로 선형모델과 머신러닝 모델로 예측 잘 될 것이라 판단
 
